@@ -1,11 +1,45 @@
-## End to End Multimodal Emotion Recognition Project
+# 🎭 End-to-End Multimodal Emotion Recognition Project
 
-## What it does: Predict a person’s emotion using voice tone + facial expression + text sentiment together.
+## 🚀 Project Overview
 
-## -> Tech stack:
+This project aims to **predict a person’s emotion** by combining insights from **three different modalities**:
 
-## -> Audio → MFCC + CNN
+- **Voice Tone**
+- **Facial Expression**
+- **Text Sentiment**
 
-## -> Video → CNN/LSTM
+By leveraging the power of audio, video, and text together, the model achieves more robust and accurate emotion recognition.
 
-## -> Text → Transformer-based models.
+---
+
+## 🧠 What It Does
+
+Predicts human emotions using:
+
+- 🎙️ **Audio signals** (e.g., tone, pitch)
+- 🎥 **Visual cues** (e.g., facial expressions)
+- 📝 **Textual content** (e.g., spoken/written words)
+
+---
+
+## 🛠️ Tech Stack & Model Architecture
+
+### 🎧 Audio Modality
+
+- **Feature Extraction**: MFCC (Mel Frequency Cepstral Coefficients)
+- **Model**: Convolutional Neural Network (**CNN**)
+
+### 📹 Video Modality
+
+- **Feature Extraction**: Frame-wise facial features
+- **Model**: **CNN + LSTM** (Long Short-Term Memory)
+
+### 🗨️ Text Modality
+
+- **Model**: Transformer-based models (e.g., **BERT**, **RoBERTa**) for sentiment and contextual analysis
+
+---
+
+## ✅ Multimodal Fusion
+
+All three modality outputs are combined to make a final emotion prediction using a **fusion layer** (can be concatenation + dense layers or attention-based fusion).
